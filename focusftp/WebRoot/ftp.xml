@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<FtpGroup>
+  <FtpServer>
+	<Depict>COREFTPDownLoad</Depict>	
+	<FtpSwitch>1</FtpSwitch>
+	<Host>188.185.1.170</Host>
+	<Port>21</Port>
+	<User>dsadm</User>
+	<Password>dsadm</Password>
+	<Remotedir>/odsdata/ATM/</Remotedir>
+	<RemoteFileName>ADMIN_INFO.del</RemoteFileName>
+	<Localdir>D:/download/</Localdir>
+	<BakLocaldir>c:\focusapp\knowledge\import\ftpbak\</BakLocaldir>
+	<Prefix>ADMIN_INFO</Prefix>
+	<Suffix>.del</Suffix>
+  </FtpServer>
+  <FtpServer>
+	<Depict>OtherDownLoad</Depict>	
+	<FtpSwitch>1</FtpSwitch>
+	<Host>192.168.1.1</Host>
+	<Port>2121</Port>
+	<User>yxm</User>
+	<Password>321</Password>
+	<Remotedir>/odsdata/ATM/</Remotedir>
+	<RemoteFileName>ADMIN_INFO.del</RemoteFileName>
+	<Localdir>D:/download/</Localdir>
+	<BakLocaldir>c:\focusapp\knowledge\import\ftpbak\</BakLocaldir>
+	<Prefix>ADMIN_INFO</Prefix>
+	<Suffix>.del</Suffix>
+  </FtpServer>
+</FtpGroup>

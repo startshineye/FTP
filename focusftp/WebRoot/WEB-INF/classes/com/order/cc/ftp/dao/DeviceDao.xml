@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.order.cc.ftp.dao.DeviceDao">
+	<insert id="insert">
+		insert into tbl_device(id,DEVICENUM,INSTITUTION,DEVICEADDRESS,MANAGERNAME,CONTACT,CREATETIME,FLAG)
+		values(#{id},#{deviceNum},#{institution},#{deviceAddress},#{managerName},#{contact},#{createTime},#{flag})
+		<selectKey keyProperty="id" resultType="String" order="BEFORE">
+			select sys_guid() from dual
+		</selectKey>
+	</insert>	
+		
+	<delete id="delete">
+		delete from tbl_device where FLAG = #{0}
+	</delete>
+	
+    <update id="update">
+		update 
+			tbl_device
+		set
+			FLAG = #{0}
+		where
+			FLAG = #{1}
+	</update>	
+</mapper>
